@@ -44,9 +44,10 @@ const Home: React.FC = () => {
               <div className="col-span-2 sm:col-span-1 bg-white p-2 rounded-3xl shadow-sm border border-zinc-100 rotate-[-2deg] hover:rotate-0 transition-transform duration-300 z-10">
                  <div className="bg-zinc-100 rounded-[1.2rem] overflow-hidden aspect-[4/5] relative">
                     <img 
-                      src="https://drive.google.com/uc?export=view&id=1xj5o6MK04-B6BLIZrXfgl9rHnVsqjTb3" 
+                      src="https://drive.google.com/thumbnail?id=1xj5o6MK04-B6BLIZrXfgl9rHnVsqjTb3&sz=w1000" 
                       alt="Hope Jiar" 
                       className="w-full h-full object-cover"
+                      referrerPolicy="no-referrer"
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-white/90 backdrop-blur-sm p-3 m-3 rounded-xl border border-white/20">
                       <p className="font-bold text-xs text-zinc-900">Hope Jiar</p>

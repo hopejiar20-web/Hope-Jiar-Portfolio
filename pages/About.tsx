@@ -12,9 +12,10 @@ const About: React.FC = () => {
           <div className="relative">
             <div className="aspect-[3/4] w-full rounded-3xl bg-zinc-100 overflow-hidden shadow-xl shadow-zinc-200/50 rotate-[-2deg] hover:rotate-0 transition-all duration-500">
                 <img 
-                  src="https://drive.google.com/uc?export=view&id=1xj5o6MK04-B6BLIZrXfgl9rHnVsqjTb3" 
+                  src="https://drive.google.com/thumbnail?id=1xj5o6MK04-B6BLIZrXfgl9rHnVsqjTb3&sz=w1000" 
                   alt="Hope Jiar" 
                   className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
                 />
             </div>
           </div>
