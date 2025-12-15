@@ -23,15 +23,11 @@ const About: React.FC = () => {
           {/* Bio Content */}
           <div className="space-y-8">
             <div>
-                <h1 className="text-4xl font-heading font-bold text-zinc-900 mb-6">About Me</h1>
+                <h1 className="text-4xl font-heading font-bold text-zinc-900 mb-6">Bio</h1>
                 <p className="text-lg text-zinc-600 leading-relaxed font-light">
-                I am an aspiring Data Analyst with a Bachelor’s degree in Mathematics and a Master’s in Financial Economics. I am passionate about transforming complex data into actionable insights and helping organizations make informed, data-driven decisions.
+                Hope Jiar is an aspiring Data Analytics Specialist with a Bachelor’s degree in Mathematics and a Master’s in Financial Economics. She is passionate about transforming complex data into actionable insights that drive meaningful decisions and create real-world impact. What makes Hope unique is her ability to notice patterns, not just in numbers, but in systems and processes, allowing her to uncover opportunities others might miss. Currently developing her skills through hands-on projects and online training, Hope has experience analyzing datasets, creating visualizations, and applying statistical techniques to practical problems. Her work in data analytics allows her to explore her passion for solving real challenges, particularly those that contribute to job creation and business growth. Outside of numbers, Hope has a quirky eye for patterns, sometimes even spotting trends in the most unexpected places, like people’s socks. This mix of analytical rigor and curiosity fuels her approach to learning and problem-solving, helping her transform insights into strategies that matter.
                 </p>
             </div>
-            
-            <p className="text-zinc-500 leading-relaxed">
-              Currently developing my skills through hands-on projects and online training, I have already gained experience analyzing datasets, creating visualizations, and applying statistical techniques to real-world problems. I aim to contribute my analytical expertise to businesses in fintech and other data-driven industries, turning numbers into meaningful strategies and solutions.
-            </p>
 
             <div className="pt-2">
                 <h3 className="text-lg font-bold text-zinc-900 mb-4">Technical Toolkit</h3>

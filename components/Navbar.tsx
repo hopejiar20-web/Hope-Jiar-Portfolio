@@ -6,9 +6,9 @@ import Button from './Button';
 
 const navItems: NavItem[] = [
   { label: 'Home', path: '/' },
-  { label: 'Portfolio', path: '/portfolio' },
-  { label: 'Elevator Pitch', path: '/elevator-pitch' },
   { label: 'About', path: '/about' },
+  { label: 'Elevator Pitch', path: '/elevator-pitch' },
+  { label: 'Portfolio', path: '/portfolio' },
 ];
 
 const Navbar: React.FC = () => {
