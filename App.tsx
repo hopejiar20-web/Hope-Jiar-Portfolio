@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
+import ElevatorPitch from './pages/ElevatorPitch';
 
 // ScrollToTop component to reset scroll position on route change
 import { useLayoutEffect } from 'react';
@@ -32,6 +33,7 @@ const App: React.FC = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/elevator-pitch" element={<ElevatorPitch />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

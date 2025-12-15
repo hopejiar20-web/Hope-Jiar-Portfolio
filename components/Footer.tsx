@@ -14,7 +14,13 @@ const Footer: React.FC = () => {
           </div>
           
           <div className="flex space-x-6">
-            <a href="#" className="p-2 bg-zinc-50 rounded-full text-zinc-600 hover:text-black hover:bg-zinc-100 transition-colors" aria-label="LinkedIn">
+            <a 
+              href="https://www.linkedin.com/in/hope-jiar-7721b6361" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-2 bg-zinc-50 rounded-full text-zinc-600 hover:text-black hover:bg-zinc-100 transition-colors" 
+              aria-label="LinkedIn"
+            >
               <Linkedin className="w-5 h-5" />
             </a>
             <a href="#" className="p-2 bg-zinc-50 rounded-full text-zinc-600 hover:text-black hover:bg-zinc-100 transition-colors" aria-label="GitHub">

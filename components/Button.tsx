@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-interface ButtonProps {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   to?: string;
-  onClick?: () => void;
+  href?: string;
+  target?: string;
   variant?: 'primary' | 'outline' | 'ghost';
   className?: string;
   type?: 'button' | 'submit' | 'reset';
@@ -13,10 +14,13 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({ 
   children, 
   to, 
+  href,
+  target,
   onClick, 
   variant = 'primary', 
   className = '',
-  type = 'button'
+  type = 'button',
+  ...props
 }) => {
   const baseStyles = "inline-flex items-center justify-center px-6 py-3 border text-sm font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-zinc-900 disabled:opacity-50 disabled:pointer-events-none";
   
@@ -36,8 +40,21 @@ const Button: React.FC<ButtonProps> = ({
     );
   }
 
+  if (href) {
+    return (
+      <a 
+        href={href} 
+        target={target} 
+        rel={target === '_blank' ? "noopener noreferrer" : undefined}
+        className={combinedClassName}
+      >
+        {children}
+      </a>
+    );
+  }
+
   return (
-    <button type={type} onClick={onClick} className={combinedClassName}>
+    <button type={type} onClick={onClick} className={combinedClassName} {...props}>
       {children}
     </button>
   );

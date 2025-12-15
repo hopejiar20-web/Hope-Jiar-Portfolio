@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { Menu, X, Database } from 'lucide-react';
+import { Menu, X, Database, Linkedin } from 'lucide-react';
 import { NavItem } from '../types';
 import Button from './Button';
 
 const navItems: NavItem[] = [
   { label: 'Home', path: '/' },
   { label: 'Portfolio', path: '/portfolio' },
+  { label: 'Elevator Pitch', path: '/elevator-pitch' },
   { label: 'About', path: '/about' },
 ];
 
@@ -30,7 +31,7 @@ const Navbar: React.FC = () => {
           </div>
           
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6">
             <div className="flex items-baseline space-x-6">
               {navItems.map((item) => (
                 <NavLink
@@ -48,9 +49,22 @@ const Navbar: React.FC = () => {
                 </NavLink>
               ))}
             </div>
-            <Button onClick={() => navigate('/contact')} className="rounded-full px-6 text-sm">
-              Book a call
-            </Button>
+
+            <div className="flex items-center gap-3 pl-2">
+              <a 
+                href="https://www.linkedin.com/in/hope-jiar-7721b6361"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-zinc-400 hover:text-[#0077b5] transition-colors p-2"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <span className="h-4 w-px bg-zinc-200"></span>
+              <Button onClick={() => navigate('/contact')} className="rounded-full px-6 text-sm">
+                Book a call
+              </Button>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -84,7 +98,15 @@ const Navbar: React.FC = () => {
               {item.label}
             </NavLink>
           ))}
-           <div className="pt-4">
+           <div className="pt-4 flex flex-col gap-3">
+            <a 
+               href="https://www.linkedin.com/in/hope-jiar-7721b6361"
+               target="_blank"
+               rel="noopener noreferrer" 
+               className="flex items-center justify-center gap-2 w-full px-4 py-3 rounded-md text-base font-medium text-zinc-500 hover:text-[#0077b5] hover:bg-zinc-50 border border-zinc-100 transition-colors"
+             >
+                <Linkedin className="w-5 h-5" /> Connect on LinkedIn
+             </a>
             <Button onClick={() => { navigate('/contact'); setIsOpen(false); }} className="w-full justify-center rounded-full">
                 Book a call
             </Button>

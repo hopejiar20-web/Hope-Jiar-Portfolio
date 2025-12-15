@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, BarChart2, PieChart, Database, FileSpreadsheet, Globe } from 'lucide-react';
+import { ArrowRight, BarChart2, PieChart, Database, FileSpreadsheet, Globe, Linkedin } from 'lucide-react';
 import Button from '../components/Button';
 
 const Home: React.FC = () => {
@@ -32,6 +32,15 @@ const Home: React.FC = () => {
               </Button>
               <Button to="/portfolio" variant="outline" className="h-14 px-8 text-base">
                 View Work <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+              <Button 
+                href="https://www.linkedin.com/in/hope-jiar-7721b6361" 
+                target="_blank" 
+                variant="outline" 
+                className="h-14 w-14 p-0 rounded-full flex items-center justify-center border-zinc-200"
+                aria-label="LinkedIn Profile"
+              >
+                <Linkedin className="w-5 h-5 text-zinc-700" />
               </Button>
             </div>
           </div>
